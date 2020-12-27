@@ -47,7 +47,21 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
-    private
+   def following
+    @title = "Following"
+    @user  = User.find(params[:id])
+    @users = @user.following.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
+  def followers
+    @title = "Followers"
+    @user  = User.find(params[:id])
+    @users = @user.followers.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
+  private
 
   def user_params # The user_parama will only be used internally by the users controller, therefore placed under private
       params.require(:user).permit(:name, :email, :password,
