@@ -18,11 +18,11 @@ gem 'jbuilder',   '2.10.0'
 gem 'bootsnap',   '1.4.6', require: false
 
 group :development, :test do
-  gem 'sqlite3', '1.4.2'
   gem 'byebug',  '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
+  gem 'sqlite3', '~> 1.4'
   gem 'web-console',           '4.0.2'
   gem 'listen',                '3.2.1'
   gem 'spring',                '2.1.0'
@@ -42,6 +42,6 @@ end
 
 group :production do
   gem 'pg', '1.2.3'
-  gem 'aws-sdk-s3', '1.46.0', require: false
+  #gem 'rails_12factor', '0.0.2'
 end
 
