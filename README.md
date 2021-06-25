@@ -1,42 +1,14 @@
-# Ruby on Rails Tutorial sample application
+# This application is a Twitter Clone build using Ruby on Rails. 
 
-This is the sample application for
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](https://www.railstutorial.org/)
-(6th Edition)
-by [Michael Hartl](https://www.michaelhartl.com/).
+The application allows users to do the following:
 
-## License
+-Signup to the application,login/logout 
 
-All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
-is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+-Create/Edit/Delete posts
 
-## Getting started
+-Follow other users.
 
-To get started with the app, clone the repo and then install the needed gems:
+The application is run on localhost:3000
 
-```
-$ bundle install --without production
-```
+Details to login can be provided at request.
 
-Next, migrate the database:
-
-```
-$ rails db:migrate
-```
-
-Finally, run the test suite to verify that everything is working correctly:
-
-```
-$ rails test
-```
-
-If the test suite passes, you'll be ready to run the app in a local server:
-
-```
-$ rails server
-```
-
-For more information, see the
-[*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
